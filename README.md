@@ -10,11 +10,11 @@ The source files for this project can be found here: [https://github.com/wisicn/
 
 If you have any improvements please submit a pull request.
 ### Docker hub repository
-The Docker hub build can be found here: [https://registry.hub.docker.com/u/wisicn/alpine-shadowsocks-supervisor/](https://registry.hub.docker.com/u/wisicn/shootback-supervisor)
+The Docker hub build can be found here: [https://hub.docker.com/r/wisicn/shootback-supervisor/](https://hub.docker.com/r/wisicn/shootback-supervisor/)
 ## Versions
 | Tag | shootback | Supervisor | alpine |
 |-----|-------|-----|--------|
-| latest | 2.9.1 | 3.2.0 | 3.6 |
+| latest | master | 3.2.0 | 3.6 |
 
 
 ## Building from source
@@ -42,6 +42,6 @@ You can change the -p ```<your Port>:10022``` and  -p ```<your Port>:10023``` to
 ### Volumes and Config file
 The config file for shootback and Supervisor are located in /etc/supervisor.d/ .
 
-So you must link your  shootback and Supervisore directory on the docker host to the container via  -v /your/path/to/ss_supervisor_config_director/:/etc/supervisor.d/
+So you must link your  shootback and Supervisore directory on the docker host to the container via  -v /your/path/to/shootback_supervisor_config_director/:/etc/supervisor.d/
 
 You can see the config files example under the data/ directory in the repository.
