@@ -34,7 +34,7 @@ docker pull wisicn/shootback-supervisor:latest
 To simply run the container:
 
 ```
-sudo docker run --name myshootback -d --restart=always -v /your/path/to/shootback_config_director/:/etc/supervisor.d/ -p 10022:10022 -p 10023:10023  wisicn/shootback
+sudo docker run --name myshootback -d --restart=always -v /your/path/to/shootback_config_director/:/etc/supervisor.d/ -p 10022:10022 -p 10023:10023  wisicn/shootback-supervisor
 ```
 
 You can change the -p ```<your Port>:10022``` and  -p ```<your Port>:10023``` to override the shootback service listening port.
